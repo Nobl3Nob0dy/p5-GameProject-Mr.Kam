@@ -7,17 +7,24 @@ var h = window.innerHeight;
 var player;
 // Set enemy
 var enemy;
+// Set obstacle
+var obstacle;
 
 function setup() {
     createCanvas(w, h);
     player = new player();
     enemy = new enemy();
-    for (let i = 0; i < 50; i++) {
-        flock.push(new Boid());
+    obstacle = new obstacle();
+    if(isEnemy = true){
+        for (let i = 0; i < 6; i++) {
+            flock.push(new Boid());
+        }
     }
 }
 
 function draw() {
+    clear();
+    // obstacle.render();
     background(51);
     player.show();
     player.update();
@@ -39,6 +46,6 @@ function draw() {
         boid.edges();
         boid.flock(flock);
         boid.update();
-        boid.show();
+        boid.render();
     }
 }

@@ -1,16 +1,4 @@
 function player() {
-    // Acceleration
-    this.aX = accelerationX;
-    this.aY = accelerationY;
-        
-    this.xMultiplier = 0.05;
-    this.yMultiplier = 0.08;
-
-    this.vX = this.velocity + this.aX;
-    this.vY = this.velocity + this.aY
-
-    this.x = this.x + this.vX * this.xMultiplier;
-    this.y = this.y + this.vY * this.yMultiplier;
     // define start pos
     this.x = w/2;
     this.y = h/2;

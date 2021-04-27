@@ -1,4 +1,6 @@
 function enemy() {
+    // Says true if enemy is present
+    this.isEnemy = true;
     // Set size of the object
     this.s = 50;
     // set starting direction
